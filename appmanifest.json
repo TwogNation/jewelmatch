@@ -1,7 +1,7 @@
 {
 	"name": "Jewel Match",
 	"short_name": "Jewel Match",
-	"description": "Game template by RedFoc",
+	"description": "",
 	"start_url": "index.html",
 	"display": "fullscreen",
 	"orientation": "portrait",

@@ -8,10 +8,10 @@ function postText(value){
 
 const scriptsInEvents = {
 
-		async Egame_Event217_Act7(runtime, localVars)
-		{
-			postText(runtime.globalVars.postMsg)
-		}
+	async Egame_Event217_Act7(runtime, localVars)
+	{
+		postText(runtime.globalVars.postMsg)
+	}
 
 };
 

@@ -25,6 +25,11 @@ const scriptsInEvents = {
 		runtime.globalVars.webSocket.close();
 	},
 
+	async Egame_Event217_Act8(runtime, localVars)
+	{
+		window.parent.postMessage("WebSocketClosed", "*");
+	},
+
 	async Egame_Event231_Act3(runtime, localVars)
 	{
 		runtime.globalVars.webSocket.send("s:2")
@@ -34,25 +39,6 @@ const scriptsInEvents = {
 	{
 		runtime.globalVars.webSocket.send("s:4")
 		
-	},
-
-	async Emenu_Event4_Act1(runtime, localVars)
-	{
-		const queryParams = new URLSearchParams(window.location.search)
-		const token = queryParams.get('token');
-		const gameId = queryParams.get('gameId');
-		
-		try{
-			const webSocket = new WebSocket('wss://arcade.stage.legacyarcade.com/ws', [token,gameId]);
-			runtime.globalVars.webSocket = webSocket;
-			webSocket.onopen = (event) =>{
-				runtime.callFunction('startendless');
-			};
-		}catch(e){
-			const textInstance = runtime.objects.ErrorText.getFirstInstance()
-			textInstance.text = "ERROR CONNECTING"
-			console.log("error connecting to server", e)
-		}
 	}
 
 };

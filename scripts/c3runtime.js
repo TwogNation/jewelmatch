@@ -4891,6 +4891,7 @@ self.C3_JsPropNameTable = [
 	{Rotate: 0},
 	{loading: 0},
 	{ErrorText: 0},
+	{version: 0},
 	{Popup_btn: 0},
 	{Button: 0},
 	{Pause_btn: 0},
@@ -5000,6 +5001,7 @@ self.InstanceType = {
 	bg_level: class extends self.ISpriteInstance {},
 	loading: class extends self.ISpriteInstance {},
 	ErrorText: class extends self.ITextInstance {},
+	version: class extends self.ITextInstance {},
 	Popup_btn: class extends self.ISpriteInstance {},
 	Button: class extends self.ISpriteInstance {},
 	Pause_btn: class extends self.ISpriteInstance {}

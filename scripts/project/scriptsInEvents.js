@@ -20,22 +20,22 @@ const scriptsInEvents = {
 		}
 	},
 
-	async Egame_Event217_Act7(runtime, localVars)
+	async Egame_Event218_Act7(runtime, localVars)
 	{
 		runtime.globalVars.webSocket.close();
 	},
 
-	async Egame_Event217_Act8(runtime, localVars)
+	async Egame_Event218_Act8(runtime, localVars)
 	{
 		window.parent.postMessage("WebSocketClosed", "*");
 	},
 
-	async Egame_Event231_Act3(runtime, localVars)
+	async Egame_Event232_Act3(runtime, localVars)
 	{
 		runtime.globalVars.webSocket.send("s:2")
 	},
 
-	async Egame_Event232_Act3(runtime, localVars)
+	async Egame_Event233_Act3(runtime, localVars)
 	{
 		runtime.globalVars.webSocket.send("s:4")
 		

@@ -4786,13 +4786,14 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Cnds.CompareFrame,
 		C3.Plugins.System.Cnds.IsGroupActive,
 		C3.Plugins.System.Cnds.Every,
-		C3.ScriptsInEvents.Egame_Event217_Act7,
-		C3.ScriptsInEvents.Egame_Event217_Act8,
+		C3.Plugins.Sprite.Acts.SetCollisions,
+		C3.ScriptsInEvents.Egame_Event218_Act7,
+		C3.ScriptsInEvents.Egame_Event218_Act8,
 		C3.Plugins.Function.Acts.CallExpression,
 		C3.Plugins.System.Exps.layoutheight,
 		C3.Plugins.System.Acts.SubVar,
-		C3.ScriptsInEvents.Egame_Event231_Act3,
 		C3.ScriptsInEvents.Egame_Event232_Act3,
+		C3.ScriptsInEvents.Egame_Event233_Act3,
 		C3.Plugins.Keyboard.Cnds.OnKey,
 		C3.Plugins.Spritefont2.Acts.SetVisible,
 		C3.Plugins.Sprite.Cnds.IsVisible,
@@ -5368,6 +5369,7 @@ self.C3_ExpressionFuncs = [
 			return () => (n0.ExpObject() + (v1.GetValue() * f2()));
 		},
 		() => "Dropped",
+		() => 30,
 		() => 4,
 		() => 5,
 		() => 1.2,
@@ -5640,8 +5642,8 @@ self.C3_ExpressionFuncs = [
 			const v1 = p._GetNode(1).GetVar();
 			return () => (n0.ExpObject() - v1.GetValue());
 		},
+		() => 20,
 		() => "timeout",
-		() => "TIME OUT!",
 		() => 15,
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
@@ -5653,7 +5655,6 @@ self.C3_ExpressionFuncs = [
 			return () => multiply(v0.GetValue(), f1(0));
 		},
 		() => "scale",
-		() => 20,
 		() => "editor",
 		() => "check.Audio",
 		() => "move",

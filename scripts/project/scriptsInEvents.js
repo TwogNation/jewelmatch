@@ -57,7 +57,7 @@ const scriptsInEvents = {
 		try {
 		    // Check if the WebSocket is already connected or in the process of connecting
 		    if (!isWebSocketConnectingOrConnected) {
-		        const webSocket = new WebSocket('wss://arcade.shadow.legacyarcade.com/ws', [token, gameId]);
+		        const webSocket = new WebSocket('wss://arcade.stage.legacyarcade.com/ws', [token, gameId]);
 		        runtime.globalVars.webSocket = webSocket;
 		
 		        webSocket.onopen = (event) => {
